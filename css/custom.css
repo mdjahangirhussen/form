@@ -1,0 +1,39 @@
+/*-----------------------------------------
+    05.Start GET-IN-TOUCH-Section
+-----------------------------------------*/
+.map{
+    height:332px;
+    border:1px solid #AAAAAA;
+}
+
+.form-group{
+    position: relative;
+}
+.form-group input {
+    border: 1px solid #40AFCC;
+    border-radius: 0;
+    background: #ddd;
+    padding: 20px 10px;
+    pointer-events:pointer;
+    resize:red;
+}
+
+.form-group textarea.form-control {
+    height: 200px;
+    background: #ddd;
+    border-radius: 0;
+    border: 1px solid #40AFCC;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 2px #40AFCC;
+}
+.form-group label {
+    position: absolute;
+    content: "";
+    left: 15px;
+    top: 10px;
+    pointer-events:none;
+}
+.form-group:focus label{
+     top: -10px;
+}
