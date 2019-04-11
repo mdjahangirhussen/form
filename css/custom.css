@@ -6,34 +6,34 @@
     border:1px solid #AAAAAA;
 }
 
-.form-group{
+.form-row {
     position: relative;
 }
-.form-group input {
-    border: 1px solid #40AFCC;
-    border-radius: 0;
-    background: #ddd;
-    padding: 20px 10px;
-    pointer-events:pointer;
-    resize:red;
+.form-control{
+    border:1px solid  #40AFCC;
+    border-radius:0;
+    padding: 30px 15px 20px;
+    background: #FAFAFA;
+
+}
+.form-control:focus {
+    box-shadow: 0 0 0 1.5px #40AFCC;
+}
+.write-text{
+    position: absolute;
+    content:'';
+    left:15px;
+    top:15px;
+    pointer-events: none;
+    -webkit-transition:all .4s ease;
+        transition:all .4s ease;
+
+}
+.form-control:focus~.write-text,
+.form-control:valid~.write-text{
+    top:0px;
 }
 
-.form-group textarea.form-control {
-    height: 200px;
-    background: #ddd;
-    border-radius: 0;
-    border: 1px solid #40AFCC;
-}
-.form-control:focus{
-    box-shadow: 0 0 0 2px #40AFCC;
-}
-.form-group label {
-    position: absolute;
-    content: "";
-    left: 15px;
-    top: 10px;
-    pointer-events:none;
-}
-.form-group:focus label{
-     top: -10px;
+textarea.form-control {
+    height: 180px;
 }
